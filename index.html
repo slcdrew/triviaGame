@@ -1,0 +1,61 @@
+<html lang="en"><head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Trivia Game</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/style.css">
+    
+    
+    </head>
+    
+    <body>
+        <div id="quizContainer" class="container">
+    
+    <div id="grid">
+            <div class="title">
+                <h1 id="gameName">Trivia Time!</h1><br>
+    
+                <h2 id="instructions">You have 45 seconds to answer 10 questions.<br>Press start to begin.</h2>
+                <br>
+                <button type="button" class="startButton">Start Game</button>
+                <br>
+                <div id="timer"></div>
+                <br>
+                <div id="wrapper" display="hide">
+                    <div id="question" class="question"></div>
+                    <br>
+                    <label class="option"><input type="radio" name="option" value="1"> <span id="opt1"></span></label><br>
+                    <label class="option"><input type="radio" name="option" value="2"> <span id="opt2"></span></label><br>
+                    <label class="option"><input type="radio" name="option" value="3"> <span id="opt3"></span></label><br>
+                    <label class="option"><input type="radio" name="option" value="4"> <span id="opt4"></span></label><br>
+                
+    
+                    <button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next Question</button>
+    
+                </div>
+            </div>
+        </div>
+        </div>
+    
+        <br>
+        <div id="grid2" display="hide">
+        <div id="result"></div>
+        <div id="correct"></div>
+        <div id="incorrect"></div>
+        <div id="unanswered"></div>
+        </div>
+    
+    
+    
+    
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="./assets/app.js"></script>
+    
+    
+    </body></html>
+
+
+    
